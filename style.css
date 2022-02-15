@@ -54,6 +54,12 @@ body {
   letter-spacing: 0.1em;
 }
 
+.menu li a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 .grid-section {
   grid-column: 2 / 4;
   width: 100%;
@@ -273,4 +279,16 @@ body {
     opacity: 1;
     max-height: 150px;
   }
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(-30px, 0, 0);
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 0);
 }
